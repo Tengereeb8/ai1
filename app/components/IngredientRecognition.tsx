@@ -101,7 +101,6 @@ export default function IngredientRecognition() {
     setFood("");
   };
 
-  // Check if button should be disabled
   const isButtonDisabled = !prompt.trim() || isLoading;
 
   return (

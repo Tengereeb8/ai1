@@ -12,7 +12,7 @@ export default function Home() {
         I used Gemini, so my money is spent everytime you generate something.
         Please use it for testcase
       </h1>
-      <Tabs defaultValue="overview" className="w-100 h-9 pt-10">
+      <Tabs defaultValue="Image analysis" className="w-100 h-9 pt-10">
         <TabsList className="bg-[#F4F4F5] h-full flex text-lg font-bold rounded-lg font-inter">
           <TabsTrigger value="Image analysis">Image analysis</TabsTrigger>
           <TabsTrigger value="Ingredient recognition">
