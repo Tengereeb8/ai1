@@ -28,7 +28,7 @@ export async function geminiAnalyzeFoodImage(file: File): Promise<string> {
             },
           },
           {
-            text: "Analyze this food photo. List the ingredients you can identify, and give a brief summary of the dish. Dont give it by md format just plain text. Answer short as possible",
+            text: "Analyze this food photo. List the ingredients you can identify, and give a brief summary of the dish. Answer short as possible",
           },
         ],
       },

@@ -2,8 +2,8 @@
 
 import { RotateCw, Sparkles, Image as ImageIcon } from "lucide-react";
 import { useState, useRef } from "react";
-import { geminiTextToImage } from "../image/getImage";
 import { geminiAnalyzeFoodImage } from "../image/analyzeImage";
+import ReactMarkdown from "react-markdown";
 
 export default function ImageAnalysis() {
   const [file, setFile] = useState<File | null>(null);
@@ -101,7 +101,7 @@ export default function ImageAnalysis() {
 
       <div className="w-145 p-4 border border-[#E4E4E7] rounded-md min-h-25">
         {analysisResult ? (
-          <p className="text-sm">{analysisResult}</p>
+          <ReactMarkdown>{analysisResult}</ReactMarkdown>
         ) : (
           <p className="text-[#71717A] text-sm ">
             {file
